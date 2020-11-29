@@ -1,6 +1,6 @@
 <?php
 
-namespace woopi\LaravelMercadoPago\Facades;
+namespace Woopi\LaravelMercadoPago\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace woopi\LaravelMercadoPago;
+namespace Woopi\LaravelMercadoPago;
 
 use Exception;
 

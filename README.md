@@ -18,7 +18,7 @@ Provider
 ```php
 'providers' => [
   // Otros Providers...
-  woopi\LaravelMercadoPago\Providers\MercadoPagoServiceProvider::class,
+  Woopi\LaravelMercadoPago\Providers\MercadoPagoServiceProvider::class,
   /*
    * Application Service Providers...
    */
@@ -30,7 +30,7 @@ Alias
 ```php
 'aliases' => [
   // Otros Aliases
-  'MP' => woopi\LaravelMercadoPago\Facades\MP::class,
+  'MP' => Woopi\LaravelMercadoPago\Facades\MP::class,
 ],
 ```
 
