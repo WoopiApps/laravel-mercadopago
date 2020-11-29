@@ -1,0 +1,20 @@
+{
+    "name": "WoopiApps/laravel-mercadopago",
+    "description": "Mercado Pago SDK v0.5.2 for Laravel",
+    "keywords": ["laravel", "mercadopago", "sdk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergio De Pietro",
+            "email": "sergio@woopi.com.ar"
+        }
+    ],
+    "require": {
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WoopiApps\\LaravelMercadoPago\\" : "src/"
+        }
+    }
+}
