@@ -100,6 +100,27 @@ class MP {
     }
 
     /**
+     * Busca una merchant order por una preference
+     * @param $preference_id
+     * @return mixed
+     * @throws MercadoPagoException
+     */
+    public function search_merchant_order_by_preference_id($preference_id)
+    {
+        $uri_prefix = $this->sandbox ? "/sandbox" : "";
+
+        $request = array(
+            "uri" => $uri_prefix . "/merchant_orders/search?order_status=paid&preference_id=" . $preference_id,
+            "params" => array(
+                "access_token" => $this->get_access_token()
+            )
+        );
+
+        $data = MPRestClient::get($request);
+        return $data['response'];
+    }
+
+    /**
      * Get information for specific payment
      * @param int $id
      * @return array(json)
